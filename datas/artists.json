@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "country": "United States",
+    "genres": [
+      "Pop",
+      "Rock"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Maria Garcia Updated",
+    "country": "Spain",
+    "genres": [
+      "Latin"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "David Kim",
+    "country": "South Korea",
+    "genres": [
+      "K-Pop",
+      "Hip-Hop"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Fakilo",
+    "country": "Madagascar",
+    "genres": [
+      "Salegy",
+      "Afro"
+    ]
+  }
+]

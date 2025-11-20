@@ -1,10 +1,22 @@
 # CRUD MAINA KELY
 
-## Pre-requis
+### Pre-requis
 Mila miinstalle express elah
 ```bash
 npm install express
 ```
+
+farany dia mila miinstalle **curl** sy **jq**
+
+raha debian
+```bash
+sudo apt install curl
+```
+sy ny tvplus
+```bash
+sudo apt install jq
+```
+
 ### tsy tadidiko na koa manao npm install fotsiny
 kkkkkk siora
 ## Ireto avy ny endpoint
@@ -48,7 +60,7 @@ curl -s -X PUT http://127.0.0.1:3000/api/artists/2   -H "Content-Type: applicati
   }' | jq
 ```
 
-supprimer l'artiste 
+supprimer un artiste 
 ```bash
 curl -s -X DELETE http://127.0.0.1:3000/api/artists/4 | jq
 ```

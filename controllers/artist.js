@@ -11,7 +11,7 @@ function read(req,res){
   const  artistId = req.params.id;
   const artist = artistService.find(artistId);
   if (artist){
-    res.status(200).json(artis);
+    res.status(200).json(artist);
   }else {
     res.status(404).json({message: "artiste non trouvee"})
   }

@@ -5,9 +5,11 @@ Mila miinstalle express elah
 ```bash
 npm install express
 ```
+### tsy tadidiko na koa manao npm install fotsiny
+kkkkkk siora
 ## Ireto avy ny endpoint
 
-GET 'http://27.0.0.1:3000/api/artist/'
+GET 'http://127.0.0.1:3000/api/artist/'
 
 GET 'http://127.0.0.1:3000/api/artist/:id'
 

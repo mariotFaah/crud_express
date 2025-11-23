@@ -51,5 +51,3 @@ function remove(req, res){
 
 
 module.exports = {list, read, create, update, remove}
-
-

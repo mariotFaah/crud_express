@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.header {
+  background-color: rgb(209, 199, 199);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.header nav {
+  text-transform: uppercase;
+  display: flex;
+  gap: 20px;
+}
+.header nav a {
+  padding: 20px 10px;
+}
+.header nav a:hover {
+  background-color: rgb(192, 180, 180);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

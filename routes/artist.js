@@ -8,6 +8,7 @@ router.get("/:id", artistController.read);
 router.post("/", artistController.create);
 router.put("/:id", artistController.update);
 router.delete("/:id", artistController.remove);
+router.post('/ai', artistController.suggest); // nouvelle route pour l'API AI
 
 
 module.exports = router;

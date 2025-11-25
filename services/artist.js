@@ -1,22 +1,22 @@
 const { loadData, saveData, validateData } = require("../utils/dataManager");
 
-const filename ="artists";
+const filename = "artists";
 
 let artists = loadData(filename);
-function findAll(){ 
+function findAll() {
   return artists;
 };
 
-function find(id) { 
+function find(id) {
   return artists.find((artist) => artist.id === parseInt(id));
 }
 
-function create(newArtist) { 
-  if(!validateData(newArtist, ['name', 'country', 'genres'])) return false; 
-  const id = artists.length > 0 ? artists[artists.length -1].id + 1 : 1;
-  const artist = { id, ...newArtist};
+function create(newArtist) {
+  if (!validateData(newArtist, ['name', 'country', 'genres'])) return false;
+  const id = artists.length > 0 ? artists[artists.length - 1].id + 1 : 1;
+  const artist = { id, ...newArtist };
   artists.push(artist);
-  saveData(filename, artists);
+  saveData(filename, artists);  
   return artist;
 }
 
@@ -44,9 +44,9 @@ function update(id, updatedArtist) {
 
 
 
-function remove(id) { 
+function remove(id) {
   const index = artists.findIndex(artist => artist.id === parseInt(id));
-  if(index === -1) return false;
+  if (index === -1) return false;
   artists.splice(index, 1);
   saveData(filename, artists);
   return true
